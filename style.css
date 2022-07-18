@@ -1,0 +1,491 @@
+/* Inicio de font-face */
+@font-face {
+	font-family: "FuentePrincipal";
+	src: url("coolvetica.otf");
+}
+
+@font-face {
+	font-family: "FuenteSecundaria";
+	src: url("RomanSerif.ttf");
+}
+
+.PrimerTitulo {
+	font-family: "FuentePrincipal";
+	color: rgb(0, 0, 0);
+	-webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+.IdeaTitulo {
+	font-family: "FuentePrincipal";
+	color: rgb(0, 0, 0);
+	text-align: center;
+	font-size: 35px;
+	-webkit-text-stroke: 1px rgb(255, 255, 255);
+	position: relative;
+	top: 20px;
+}
+
+.AnclaMenu{
+	font-family: "FuenteSecundaria";
+	font-weight: bold;
+}
+/* Final de font-face */
+
+
+/* Inicio del reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Final del reset */
+
+
+/* Inicio elementos de menú */
+.Enlaces {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ElementLi {
+    display: inline;
+    padding: 15px;
+}
+
+.AnclaMenu{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-size: 20px;
+	position: relative;
+	bottom: 5px;
+}
+
+.AnclaMenu:hover{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-size: 20px;
+	position: relative;
+	bottom: 5px;
+}
+
+.AnclaMenu:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: rgb(0, 238, 255);
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.AnclaMenu:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+} 
+/* Final elementos de menú */
+
+
+/* 🔶Inicio Elementos Maquetado🔶 */
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	background-image: linear-gradient(rgb(17, 192, 236), rgb(117, 245, 238));
+}
+
+.header{
+	height: 80px;
+	background-image: url("HeaderPinterBash.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+} 
+
+.main{
+	height: 569px;
+	margin-top: 0px;
+	overflow-y: scroll;
+}
+
+.menu{
+	height: 50px;
+	margin-top: 0px;
+}
+
+.Button{
+	width: 200px;
+	height: 60px;
+	border-radius: 50px;
+	background-color: rgb(19, 207, 19);
+	border: solid black 3px;
+	margin-left: 685px;
+	position: relative;
+	top: 20px;
+	transition: all 2s;
+}
+
+.Button:hover{
+	width: 200px;
+	height: 60px;
+	border-radius: 50px;
+	background-color: rgb(0, 190, 248);
+	border: solid black 3px;
+	margin-left: 685px;
+	position: relative;
+	top: 20px;
+}
+
+.TextButton{
+	font-size: 20px;
+	color: white;
+	position: relative;
+	top: 5px;
+}
+
+.FormatoImagen{
+    max-height: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+	border-radius: 30px;
+	border: solid white 5px;
+}
+
+.FormatoButtomIndex{
+	height: 100px;
+	overflow: hidden;
+}
+
+
+/*-----------✅Media query Mobile✅-----------*/
+@media screen and (max-width: 768px) {
+	.Button{
+		width: 200px;
+		height: 60px;
+		border-radius: 50px;
+		background-color: rgb(19, 207, 19);
+		border: solid black 3px;
+		margin-left: 100px;
+	}
+
+	.Button:hover{
+		width: 200px;
+		height: 60px;
+		border-radius: 50px;
+		background-color: rgb(0, 190, 248);
+		border: solid black 3px;
+		margin-left: 100px;
+	}
+}
+/*-----------✅Media query Mobile✅-----------*/
+
+
+ .TextButton{
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	position: relative;
+} 
+
+.TextButton:hover{
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	position: relative;
+} 
+
+.DivTextButton{
+	font-size: 20px;
+	text-decoration: none;
+	position: relative;
+	bottom: 5px;
+}
+
+.footer{
+	height: 90px;
+	margin-top: 0px;
+	background-image: url("FooterPinterBash.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+} 
+/* 🔶Inicio Elementos Maquetado🔶 */
+
+
+
+/* 🔘Cosas de Info.html🔘 */
+/*-----------✅Media query PC✅-----------*/
+@media screen and (min-width: 1200px){
+
+.MasInfo{
+	height: 350px;
+}
+	
+.CuadroInfo{
+	height: 350px;
+	width: 750px;
+	background-image: url("MasInfoRec.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	left: 6px;
+	border-radius: 50px;
+}
+
+.ImgCuadro{
+	height: 300px;
+	width: 300px;
+	background-color: rgb(2, 2, 255);
+}
+	
+	
+.TextIdeas{
+	height: 50px;
+}
+
+.TextoIdea{
+	margin-top: 20px;
+	text-align:center;
+}
+	
+.FilaIdeas{
+	height: 300px;
+}
+	
+ .CuadroIdea{
+	height: 120px;
+	width: 500px;
+	background-image: url("IdeaImg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50px;
+	margin-top: 28px;
+	position: relative;
+	left: 520px;
+	border: solid white 5px;
+}
+
+.CuadroIdea:hover{
+	height: 120px;
+	width: 500px;
+	background-image: url("IdeaImgSect.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50px;
+	margin-top: 28px;
+	position: relative;
+	left: 520px;
+	border: solid rgb(102, 163, 255) 5px;
+}
+
+.EspcIdea{
+	height: 10px;
+	width: 500px;
+	border-radius: 50px;
+	position: relative;
+	left: 90px;
+}
+
+.CuadroIdea2{
+	height: 120px;
+	width: 500px;
+	background-image: url("IdeaImg2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50px;
+	position: relative;
+	left: 520px;
+	border: solid white 5px;
+} 
+
+.CuadroIdea2:hover{
+	height: 120px;
+	width: 500px;
+	background-image: url("IdeaImg2Sect.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50px;
+	position: relative;
+	left: 520px;
+	border: solid rgb(102, 163, 255) 5px;
+} 
+
+.FormatoButtom{
+	height: 100px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+	
+}
+/*-----------✅Media query PC✅-----------*/
+
+
+
+/*-----------✅Media query Mobile✅-----------*/
+@media screen and (max-width: 768px) {
+	
+.ColumnI1{
+	height: 40px;
+}
+	
+.ColumnI2{
+	height: 310px;
+}
+	
+.ColumnI3{
+	height: 40px;
+}
+	
+.CuadroInfo{
+	height: 300px;
+	width: 410px;
+	background-image: url("MasInfoRecMov.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	left: 20px;
+	border-radius: 50px;
+}
+
+.TextIdeas{
+	height: 40px;
+}
+
+.TextoIdea{
+	text-align:center;
+}
+
+.MasInfo{
+	height: 350px;
+}
+	
+.FilaIdeas{
+	height: 300px;
+}
+
+.CuadroIdea{
+	height: 120px;
+	width: 350px;
+	background-image: url("IdeaImg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50px;
+	margin-top: 28px;
+	position: relative;
+	left: 35px;
+	border: solid white 5px;
+}
+
+.CuadroIdea:hover{
+	height: 120px;
+	width: 350px;
+	background-image: url("IdeaImgSect.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50px;
+	margin-top: 28px;
+	position: relative;
+	left: 35px;
+	border: solid rgb(102, 163, 255) 5px;
+}
+		
+.EspcIdea{
+	height: 10px;
+	width: 300px;
+	border-radius: 50px;
+}
+		
+.CuadroIdea2{
+	height: 120px;
+	width: 350px;
+	background-image: url("IdeaImg2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50px;
+	position: relative;
+	left: 35px;
+	border: solid white 5px;
+} 
+
+.CuadroIdea2:hover{
+	height: 120px;
+	width: 350px;
+	background-image: url("IdeaImg2Sect.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50px;
+	position: relative;
+	left: 35px;
+	border: solid rgb(102, 163, 255) 5px;
+} 
+
+.FormatoButtom{
+	height: 150px;
+	overflow: hidden;
+}
+
+.FormatoButtomIndex{
+	height: 150px;
+	overflow: hidden;
+}
+
+.Button{
+	width: 200px;
+	height: 60px;
+	border-radius: 50px;
+	background-color: rgb(19, 207, 19);
+	border: solid black 3px;
+	position: relative;
+	top: 50px;
+	left: 20px;
+	transition: all 2s;
+}
+
+.Button:hover{
+	width: 200px;
+	height: 60px;
+	border-radius: 50px;
+	background-color: rgb(0, 190, 248);
+	border: solid black 3px;
+	position: relative;
+	top: 50px;
+	left: 20px;
+}
+
+.TextButton{
+	font-size: 20px;
+	color: white;
+	position: relative;
+	top: 5px;
+}
+
+.TextButton:hover{
+	font-size: 20px;
+	color: white;
+	position: relative;
+	top: 5px;
+}
+
+}
+/*-----------✅Media query Mobile✅-----------*/
+/* 🔘Cosas de Info.html🔘 */
+
+
+
+
+
+
